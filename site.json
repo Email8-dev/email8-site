@@ -1,0 +1,114 @@
+{
+  "vertical": "email8",
+  "name": "Email8",
+  "org": "Email8-dev",
+  "domain": "email8.dev",
+  "tagline": "Email on Sentin8 — an SMTP/LMTP transfer engine, a mail & collaboration data core with JMAP, IMAP/POP3/Sieve/CalDAV access, and a TLS gate for the well-known ports.",
+  "accent": "#3E8FB0",
+  "pillarsLead": "Email8 inherits the Sentin8 security model and adds mail's own guarantees — authenticated access on every protocol, DKIM-signed outbound, and TLS-only listeners.",
+  "pillars": [
+    {
+      "title": "One data core",
+      "summary": "Store owns mailboxes, messages, folders, contacts, and calendars — MTA, Access, and Webmail all compose against it through authenticated APIs, never raw tables."
+    },
+    {
+      "title": "Signed outbound",
+      "summary": "The MTA DKIM-signs every outbound message and generates DMARC/TLS-RPT reports — deliverability and domain alignment are built in."
+    },
+    {
+      "title": "Full-protocol access",
+      "summary": "IMAP with full CAPABILITY handling, POP3, ManageSieve, and CalDAV/CardDAV/WebDAV — every mailbox protocol served through one access tier."
+    },
+    {
+      "title": "TLS on every port",
+      "summary": "Gate terminates the well-known mail ports (submission 587, SMTPS 465, IMAPS 993) with the platform's post-quantum certificates and discovers healthy instances at runtime."
+    },
+    {
+      "title": "JMAP, the modern API",
+      "summary": "The authenticated JMAP read/write surface powers Webmail and any third-party client — batched, efficient, and protocol-versioned."
+    }
+  ],
+  "units": [
+    {
+      "slug": "mta",
+      "kind": "service",
+      "name": "Email8:Mta",
+      "repo": "email8-mta",
+      "org": "Email8-dev",
+      "summary": "The mail transfer engine: SMTP/LMTP protocol handling, the durable delivery queue (message + recipient state machine with scheduled retries), DKIM signing, DMARC/TLS-RPT report generation.",
+      "scopes": [
+        "email8:mta:queue:write",
+        "email8:mta:reports:read"
+      ]
+    },
+    {
+      "slug": "store",
+      "kind": "service",
+      "name": "Email8:Store",
+      "repo": "email8-store",
+      "org": "Email8-dev",
+      "summary": "The mail plane's data core: mailboxes, messages, folders, contacts, calendars (the email8 schema) plus the JMAP API — the authenticated read/write surface for the other mail services.",
+      "scopes": [
+        "email8:store:mail:read",
+        "email8:store:jmap:write"
+      ]
+    },
+    {
+      "slug": "access",
+      "kind": "service",
+      "name": "Email8:Access",
+      "repo": "email8-access",
+      "org": "Email8-dev",
+      "summary": "The mailbox access protocols: IMAP (full CAPABILITY handling), POP3, ManageSieve, and the CalDAV/CardDAV/WebDAV collaboration endpoints — reading mail data through Store.",
+      "scopes": [
+        "email8:access:imap:read",
+        "email8:access:caldav:read"
+      ]
+    },
+    {
+      "slug": "gate",
+      "kind": "service",
+      "name": "Email8:Gate",
+      "repo": "email8-gate",
+      "org": "Email8-dev",
+      "summary": "The raw-TCP front door for the well-known mail ports (SMTP submission 587, SMTPS 465, IMAPS 993, …): terminates the TLS/TCP listener set and discovers healthy MTA/Access instances at runtime.",
+      "scopes": [
+        "email8:gate:sessions:read"
+      ]
+    }
+  ],
+  "apps": [
+    {
+      "slug": "webmail",
+      "kind": "app",
+      "name": "Webmail",
+      "repo": "email8-webmail",
+      "org": "Email8-dev",
+      "summary": "The browser mail client: mail, calendar, and contacts over the JMAP API through the BFF proxy."
+    }
+  ],
+  "sdks": [
+    {
+      "slug": "sdk",
+      "kind": "sdk",
+      "name": "email8 Rust SDK",
+      "repo": "email8-sdk",
+      "org": "Email8-dev",
+      "summary": "The shared vertical plane: IMAP/SMTP protocol codecs, ical parsing, event contracts, and typed clients every email8 service and integrator consumes.",
+      "href": "/docs/sdk/"
+    }
+  ],
+  "showcaseTitle": "Built on the Sentin8 platform",
+  "showcaseLead": "Email8 contains no platform infrastructure of its own — identity, events, storage, and scheduling are consumed from the platform.",
+  "showcase": [
+    {
+      "slug": "sentin8",
+      "name": "Sentin8 — the platform",
+      "chip": "sentin8.dev",
+      "accent": "#D4AF37",
+      "summary": "17 services: identity, events, storage, workflows, scheduling — everything email8 doesn't rebuild.",
+      "href": "https://sentin8.dev/"
+    }
+  ],
+  "crossrefs": []
+}
