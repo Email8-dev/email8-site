@@ -18,7 +18,10 @@ email8 services.
 - **Collaboration** — calendars and contacts render beside mail from
   the same data core the CalDAV/CardDAV endpoints serve.
 
-## Deep dive
+## Full documentation
 
-[Webmail reference](/docs/reference/webmail/) — README, DESIGN,
-BUSINESS harvested from `Email8-dev/email8-webmail`.
+The complete detail lives in this product's sub-pages:
+
+- [Security](security) — the full document, harvested from the unit's repository at build time.
+- [Overview (repo README)](/docs/reference/webmail/) — the maintainer's README in the consolidated reference section.
+

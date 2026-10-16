@@ -21,7 +21,10 @@ authenticated APIs.
   collaboration data Webmail shows over JMAP — one truth, two
   protocol surfaces.
 
-## Deep dive
+## Full documentation
 
-[Access reference](/docs/reference/access/) — harvested from
-`Email8-dev/email8-access`.
+The complete detail lives in this product's sub-pages:
+
+- [Security](security) — the full document, harvested from the unit's repository at build time.
+- [Overview (repo README)](/docs/reference/access/) — the maintainer's README in the consolidated reference section.
+

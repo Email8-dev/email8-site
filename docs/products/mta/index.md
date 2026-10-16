@@ -21,7 +21,10 @@ retries), DKIM signing, and DMARC/TLS-RPT report generation.
 - **DMARC & TLS-RPT** — aggregate reports generate on the declared
   schedule for the domain's senders and receivers.
 
-## Deep dive
+## Full documentation
 
-[Mta reference](/docs/reference/mta/) — README, DESIGN, BUSINESS
-harvested from `Email8-dev/email8-mta`.
+The complete detail lives in this product's sub-pages:
+
+- [Security](security) — the full document, harvested from the unit's repository at build time.
+- [Overview (repo README)](/docs/reference/mta/) — the maintainer's README in the consolidated reference section.
+

@@ -22,7 +22,10 @@ instances at runtime.
   upgrades) without Gate reconfiguration — the registry keys are the
   source of truth.
 
-## Deep dive
+## Full documentation
 
-[Gate reference](/docs/reference/gate/) — harvested from
-`Email8-dev/email8-gate`.
+The complete detail lives in this product's sub-pages:
+
+- [Security](security) — the full document, harvested from the unit's repository at build time.
+- [Overview (repo README)](/docs/reference/gate/) — the maintainer's README in the consolidated reference section.
+

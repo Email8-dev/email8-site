@@ -23,7 +23,10 @@ against.
   a mailbox leak is a database-level impossibility, not an
   application convention.
 
-## Deep dive
+## Full documentation
 
-[Store reference](/docs/reference/store/) — harvested from
-`Email8-dev/email8-store`.
+The complete detail lives in this product's sub-pages:
+
+- [Security](security) — the full document, harvested from the unit's repository at build time.
+- [Overview (repo README)](/docs/reference/store/) — the maintainer's README in the consolidated reference section.
+

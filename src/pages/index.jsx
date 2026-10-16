@@ -2,7 +2,7 @@
 import React from 'react';
 import Layout from '@theme/Layout';
 import {
-  Hero, Section, ProductGrid, AppGrid, SdkGrid, VerticalShowcase, SecurityPillars,
+  Hero, Section, StartHere, ProductGrid, AppGrid, SdkGrid, VerticalShowcase, SecurityPillars,
 } from '@sentin8/site-engine/components';
 import site from '../../site.json';
 
@@ -22,6 +22,25 @@ export default function Home() {
             { label: 'GitHub', href: 'https://github.com/' + site.org },
           ]}
         />
+        <StartHere items={[
+          {
+            title: 'Product tour',
+            description: 'What Email8 is — the transfer engine, the mail data core with JMAP, and full-protocol access.',
+            href: '/docs',
+            primary: true,
+          },
+          {
+            title: 'Security',
+            description: 'Mail guarantees: DKIM-signed outbound, TLS on every port, authenticated access on every protocol.',
+            href: '/docs/security',
+          },
+          {
+            title: 'Get started',
+            description: 'JMAP, IMAP, and submission samples plus the developer quickstart.',
+            href: '/docs/developers',
+          },
+        ]} />
+
 
         {site.units?.length ? (
           <Section
