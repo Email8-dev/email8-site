@@ -3,21 +3,21 @@
   "name": "Email8",
   "org": "Email8-dev",
   "domain": "email8.dev",
-  "tagline": "Email on Sentin8 — an SMTP/LMTP transfer engine, a mail & collaboration data core with JMAP, IMAP/POP3/Sieve/CalDAV access, and a TLS gate for the well-known ports.",
+  "tagline": "Email on Sentin8 \u2014 an SMTP/LMTP transfer engine, a mail & collaboration data core with JMAP, IMAP/POP3/Sieve/CalDAV access, and a TLS gate for the well-known ports.",
   "accent": "#3E8FB0",
-  "pillarsLead": "Email8 inherits the Sentin8 security model and adds mail's own guarantees — authenticated access on every protocol, DKIM-signed outbound, and TLS-only listeners.",
+  "pillarsLead": "Email8 inherits the Sentin8 security model and adds mail's own guarantees \u2014 authenticated access on every protocol, DKIM-signed outbound, and TLS-only listeners.",
   "pillars": [
     {
       "title": "One data core",
-      "summary": "Store owns mailboxes, messages, folders, contacts, and calendars — MTA, Access, and Webmail all compose against it through authenticated APIs, never raw tables."
+      "summary": "Store owns mailboxes, messages, folders, contacts, and calendars \u2014 MTA, Access, and Webmail all compose against it through authenticated APIs, never raw tables."
     },
     {
       "title": "Signed outbound",
-      "summary": "The MTA DKIM-signs every outbound message and generates DMARC/TLS-RPT reports — deliverability and domain alignment are built in."
+      "summary": "The MTA DKIM-signs every outbound message and generates DMARC/TLS-RPT reports \u2014 deliverability and domain alignment are built in."
     },
     {
       "title": "Full-protocol access",
-      "summary": "IMAP with full CAPABILITY handling, POP3, ManageSieve, and CalDAV/CardDAV/WebDAV — every mailbox protocol served through one access tier."
+      "summary": "IMAP with full CAPABILITY handling, POP3, ManageSieve, and CalDAV/CardDAV/WebDAV \u2014 every mailbox protocol served through one access tier."
     },
     {
       "title": "TLS on every port",
@@ -25,7 +25,7 @@
     },
     {
       "title": "JMAP, the modern API",
-      "summary": "The authenticated JMAP read/write surface powers Webmail and any third-party client — batched, efficient, and protocol-versioned."
+      "summary": "The authenticated JMAP read/write surface powers Webmail and any third-party client \u2014 batched, efficient, and protocol-versioned."
     }
   ],
   "units": [
@@ -47,7 +47,7 @@
       "name": "Email8:Store",
       "repo": "email8-store",
       "org": "Email8-dev",
-      "summary": "The mail plane's data core: mailboxes, messages, folders, contacts, calendars (the email8 schema) plus the JMAP API — the authenticated read/write surface for the other mail services.",
+      "summary": "The mail plane's data core: mailboxes, messages, folders, contacts, calendars (the email8 schema) plus the JMAP API \u2014 the authenticated read/write surface for the other mail services.",
       "scopes": [
         "email8:store:mail:read",
         "email8:store:jmap:write"
@@ -59,7 +59,7 @@
       "name": "Email8:Access",
       "repo": "email8-access",
       "org": "Email8-dev",
-      "summary": "The mailbox access protocols: IMAP (full CAPABILITY handling), POP3, ManageSieve, and the CalDAV/CardDAV/WebDAV collaboration endpoints — reading mail data through Store.",
+      "summary": "The mailbox access protocols: IMAP (full CAPABILITY handling), POP3, ManageSieve, and the CalDAV/CardDAV/WebDAV collaboration endpoints \u2014 reading mail data through Store.",
       "scopes": [
         "email8:access:imap:read",
         "email8:access:caldav:read"
@@ -71,7 +71,7 @@
       "name": "Email8:Gate",
       "repo": "email8-gate",
       "org": "Email8-dev",
-      "summary": "The raw-TCP front door for the well-known mail ports (SMTP submission 587, SMTPS 465, IMAPS 993, …): terminates the TLS/TCP listener set and discovers healthy MTA/Access instances at runtime.",
+      "summary": "The raw-TCP front door for the well-known mail ports (SMTP submission 587, SMTPS 465, IMAPS 993, \u2026): terminates the TLS/TCP listener set and discovers healthy MTA/Access instances at runtime.",
       "scopes": [
         "email8:gate:sessions:read"
       ]
@@ -99,16 +99,44 @@
     }
   ],
   "showcaseTitle": "Built on the Sentin8 platform",
-  "showcaseLead": "Email8 contains no platform infrastructure of its own — identity, events, storage, and scheduling are consumed from the platform.",
+  "showcaseLead": "Email8 contains no platform infrastructure of its own \u2014 identity, events, storage, and scheduling are consumed from the platform.",
   "showcase": [
     {
       "slug": "sentin8",
-      "name": "Sentin8 — the platform",
+      "name": "Sentin8 \u2014 the platform",
       "chip": "sentin8.dev",
       "accent": "#D4AF37",
-      "summary": "17 services: identity, events, storage, workflows, scheduling — everything email8 doesn't rebuild.",
+      "summary": "17 services: identity, events, storage, workflows, scheduling \u2014 everything email8 doesn't rebuild.",
       "href": "https://sentin8.dev/"
     }
   ],
-  "crossrefs": []
+  "crossrefs": [],
+  "eyebrow": "Email on Sentin8 \u2014 the full mail platform",
+  "stats": [
+    {
+      "value": "4",
+      "label": "services"
+    },
+    {
+      "value": "5",
+      "label": "protocols (IMAP/POP3/Sieve/CalDAV/JMAP)"
+    },
+    {
+      "value": "1",
+      "label": "data core"
+    },
+    {
+      "value": "0",
+      "label": "plaintext listeners"
+    }
+  ],
+  "code": {
+    "title": "read a mailbox (JMAP)",
+    "lang": "bash",
+    "lines": [
+      "$ curl -b jar.txt https://bff.ops.sys.example.com/proxy/store/v1/jmap",
+      "  -d '{ \"methodCalls\": [[\"Email/query\", { \"limit\": 20 }, \"c1\"]] }'",
+      "# DKIM-signed outbound \u00b7 TLS on every port \u00b7 one data core"
+    ]
+  }
 }
