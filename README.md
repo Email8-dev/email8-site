@@ -1,4 +1,4 @@
-# README.md: Email8:Site — email8.dev
+# README.md: Email8:Site - email8.dev
 
 > The Email8 public website at [email8.dev](https://email8.dev): every
 > product, app, and SDK of the vertical, with its domain invariants
@@ -12,7 +12,7 @@ email8.dev is the Email8 vertical's product site: a landing page
 detailing all four products and one apps, per-product
 pages with use cases and API surfaces, the vertical's security
 invariants, developer lifecycle, samples, and a **Reference** section
-harvested at build time from each unit repo's own docs — the
+harvested at build time from each unit repo's own docs - the
 repositories stay the source of truth.
 
 ## 2. Motivation

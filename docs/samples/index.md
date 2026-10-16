@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Samples
 
-First calls against a running email8 deployment — through the BFF
+First calls against a running email8 deployment - through the BFF
 proxy (JMAP/Webmail) and over the standard protocols.
 
 ## 1. Read a mailbox over JMAP (Webmail path)
@@ -46,7 +46,7 @@ curl -b jar.txt \
 ```
 
 The MTA signs the outbound message with the domain's DKIM key (a
-secret reference) and queues it — delivery state is queryable.
+secret reference) and queues it - delivery state is queryable.
 
 ## 3. IMAP from a standard client
 
@@ -56,7 +56,7 @@ User: you@example.com                Auth: platform identity
 ```
 
 Gate terminates TLS on 993, discovers the healthy Access instance,
-and pipes the session — your client sees a standard IMAP server.
+and pipes the session - your client sees a standard IMAP server.
 
 ## 4. From Dart (the Webmail pattern)
 

@@ -2,7 +2,7 @@
 sidebar_position: 5
 ---
 
-# Email8:Gate — the TLS front door
+# Email8:Gate - the TLS front door
 
 The raw-TCP front door for the well-known mail ports (SMTP
 submission 587, SMTPS 465, IMAPS 993, and the rest of the set):
@@ -12,20 +12,20 @@ instances at runtime.
 
 ## Use cases
 
-- **One front door** — every mail port terminates here; Gate
+- **One front door** - every mail port terminates here; Gate
   discovers the active MTA/Access instances from the runtime
   registry and pipes or proxies to them.
-- **PQ-TLS everywhere** — the listener set carries the platform's
+- **PQ-TLS everywhere** - the listener set carries the platform's
   X25519MLKEM768 + ML-DSA-65 certificates; a classical connection
   is refused, not negotiated.
-- **Runtime routing** — instances scale and restart (Captain
-  upgrades) without Gate reconfiguration — the registry keys are the
+- **Runtime routing** - instances scale and restart (Captain
+  upgrades) without Gate reconfiguration - the registry keys are the
   source of truth.
 
 ## Full documentation
 
 The complete detail lives in this product's sub-pages:
 
-- [Security](security) — the full document, harvested from the unit's repository at build time.
-- [Overview (repo README)](/docs/reference/gate/) — the maintainer's README in the consolidated reference section.
+- [Security](security) - the full document, harvested from the unit's repository at build time.
+- [Overview (repo README)](/docs/reference/gate/) - the maintainer's README in the consolidated reference section.
 
