@@ -17,7 +17,7 @@ Sentin8 Email8:Store - mail/collaboration data core + JMAP API.
 
 ### `POST /v1/admin/{page}`
 
-`POST /v1/admin/{page}` - data for the admin viewer pages.
+`POST /v1/admin/&#123;page&#125;` - data for the admin viewer pages.
 
 **Parameters**:
 

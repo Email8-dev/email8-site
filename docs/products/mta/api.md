@@ -17,7 +17,7 @@ Sentin8 Email8:Mta - SMTP/LMTP transfer engine, queue, DKIM, reports.
 
 ### `POST /v1/admin/{page}`
 
-`POST /v1/admin/{page}` - data endpoints.
+`POST /v1/admin/&#123;page&#125;` - data endpoints.
 
 **Parameters**:
 
@@ -60,6 +60,6 @@ Sentin8 Email8:Mta - SMTP/LMTP transfer engine, queue, DKIM, reports.
 | --- | --- | --- |
 | 200 | Queued | `SubmitResponse` |
 | 401 | Token verification failed | - |
-| 403 | Missing email8:submission:send scope or env mismatch | - |
+| 403 | Missing `email8:submission:send` scope or env mismatch | - |
 | 404 | Blob not found in Storage | - |
 
