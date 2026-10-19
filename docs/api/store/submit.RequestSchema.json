@@ -1,1 +1,1 @@
-{"title":"Body","body":{"content":{"application/json":{"schema":{}}},"required":true}}
+{"title":"Body","body":{"content":{"application/json":{"schema":{"type":"object","required":["queue_id"],"properties":{"next_event_at":{"type":["string","null"],"format":"date-time","description":"Earliest due event (retry/notify/expiry) - informational."},"queue_id":{"type":"string","format":"uuid"}},"title":"SubmitResponse"}}},"required":true}}

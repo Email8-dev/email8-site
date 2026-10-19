@@ -1,1 +1,1 @@
-{"responses":{"200":{"description":"JMAP request/response batch (RFC 8620 §3.6)","content":{"application/json":{"schema":{}}}},"401":{"description":"Not authenticated"}}}
+{"responses":{"200":{"description":"JMAP request/response batch (RFC 8620 §3.6)","content":{"application/json":{"schema":{"description":"The JMAP request/response batch (RFC 8620 §3.6): method calls are\nextension-defined - same transparent-wrapper treatment.","title":"JmapBatch"}}}},"401":{"description":"Not authenticated"}}}

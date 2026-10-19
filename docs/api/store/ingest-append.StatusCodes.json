@@ -1,1 +1,1 @@
-{"responses":{"200":{"description":"Appended","content":{"application/json":{"schema":{}}}}}}
+{"responses":{"200":{"description":"Appended","content":{"application/json":{"schema":{"type":"object","description":"Append (IMAP APPEND) result.","required":["email_id"],"properties":{"email_id":{"type":"string","format":"uuid","description":"The created email id."},"imap_uid":{"type":["integer","null"],"format":"int32","description":"The UID assigned in the target mailbox (absent in preview-only paths).","minimum":0}},"title":"AppendResult"}}}}}}

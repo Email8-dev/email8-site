@@ -1,1 +1,1 @@
-{"responses":{"200":{"description":"Telemetry snapshot","content":{"application/json":{"schema":{}}}}}}
+{"responses":{"200":{"description":"Telemetry snapshot","content":{"application/json":{"schema":{"description":"Telemetry counters snapshot (a dynamic metric map - honest\ntransparent wrapper; the metric name set is runtime-defined).","title":"GateTelemetry"}}}}}}

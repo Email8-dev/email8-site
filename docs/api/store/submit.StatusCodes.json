@@ -1,1 +1,1 @@
-{"responses":{"200":{"description":"Submitted","content":{"application/json":{"schema":{}}}}}}
+{"responses":{"200":{"description":"Submitted","content":{"application/json":{"schema":{"type":"object","required":["queue_id"],"properties":{"next_event_at":{"type":["string","null"],"format":"date-time","description":"Earliest due event (retry/notify/expiry) - informational."},"queue_id":{"type":"string","format":"uuid"}},"title":"SubmitResponse"}}}}}}

@@ -1,1 +1,1 @@
-{"responses":{"200":{"description":"JMAP EventSource SSE stream (push notifications)","content":{"application/json":{"schema":{}}}}}}
+{"responses":{"200":{"description":"JMAP EventSource SSE stream (push notifications)","content":{"text/event-stream":{"schema":{"type":"string"}}}}}}

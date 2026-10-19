@@ -1,1 +1,1 @@
-{"responses":{"200":{"description":"Effective rights","content":{"application/json":{"schema":{}}}}}}
+{"responses":{"200":{"description":"Effective rights","content":{"application/json":{"schema":{"type":"object","description":"Effective-rights read.","required":["rights","is_owner"],"properties":{"is_owner":{"type":"boolean","description":"Whether the grantee owns the mailbox."},"rights":{"type":"integer","format":"int32","description":"The rights bitmask (RFC 2086-style ACL int; owner = i32::MAX)."}},"title":"AclEffectiveRights"}}}}}}

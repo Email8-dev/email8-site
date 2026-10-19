@@ -1,1 +1,1 @@
-{"responses":{"200":{"description":"Blob stored","content":{"application/json":{"schema":{}}}}}}
+{"responses":{"200":{"description":"Blob stored","content":{"application/json":{"schema":{"type":"object","description":"Blob-store ack.","required":["blob_hash","size"],"properties":{"blob_hash":{"type":"string","description":"The content-addressed blob hash."},"size":{"type":"integer","description":"Blob size in bytes.","minimum":0}},"title":"BlobStored"}}}}}}

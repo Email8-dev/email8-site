@@ -1,1 +1,1 @@
-{"title":"Body","body":{"content":{"application/json":{"schema":{}}},"required":true}}
+{"title":"Body","body":{"content":{"application/json":{"schema":{"description":"The JMAP request/response batch (RFC 8620 §3.6): method calls are\nextension-defined - same transparent-wrapper treatment.","title":"JmapBatch"}}},"required":true}}

@@ -1,1 +1,1 @@
-{"responses":{"200":{"description":"Copied","content":{"application/json":{"schema":{}}}}}}
+{"responses":{"200":{"description":"Copied","content":{"application/json":{"schema":{"type":"object","description":"Copy ack.","required":["copied"],"properties":{"copied":{"type":"integer","description":"Emails copied.","minimum":0}},"title":"CopiedCount"}}}}}}

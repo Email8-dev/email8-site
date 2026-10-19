@@ -1,1 +1,1 @@
-{"title":"Body","body":{"content":{"application/json":{"schema":{}}},"required":true}}
+{"title":"Body","body":{"content":{"application/json":{"schema":{"type":"object","required":["allowed","used_bytes"],"properties":{"allowed":{"type":"boolean"},"quota_bytes":{"type":["integer","null"],"format":"int64"},"used_bytes":{"type":"integer","format":"int64"}},"title":"BlobQuotaVerdict"}}},"required":true}}
