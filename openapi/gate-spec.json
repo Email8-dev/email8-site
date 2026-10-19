@@ -36,7 +36,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`GET /v1/admin/attributes`"
       },
       "put": {
         "tags": [
@@ -71,7 +72,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`PUT /v1/admin/attributes`"
       },
       "delete": {
         "tags": [
@@ -101,7 +103,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`DELETE /v1/admin/attributes`"
       }
     },
     "/v1/admin/policy-sets": {
@@ -130,7 +133,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`GET /v1/admin/policy-sets`"
       }
     },
     "/v1/admin/policy-sets/disable": {
@@ -159,7 +163,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`POST /v1/admin/policy-sets/disable`"
       }
     },
     "/v1/admin/policy-sets/enforce": {
@@ -188,7 +193,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`POST /v1/admin/policy-sets/enforce`"
       }
     },
     "/v1/admin/policy-sets/shadow": {
@@ -217,7 +223,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`POST /v1/admin/policy-sets/shadow`"
       }
     },
     "/v1/admin/policy-sets/{name}": {
@@ -257,7 +264,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`GET /v1/admin/policy-sets/{name}`"
       },
       "put": {
         "tags": [
@@ -303,7 +311,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`PUT /v1/admin/policy-sets/{name}`"
       },
       "delete": {
         "tags": [
@@ -333,7 +342,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`DELETE /v1/admin/policy-sets/{name}`"
       }
     },
     "/v1/admin/policy-sets/{name}/test": {
@@ -378,7 +388,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`POST /v1/admin/policy-sets/{name}/test`"
       }
     },
     "/v1/admin/relations": {
@@ -407,7 +418,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`GET /v1/admin/relations`"
       },
       "put": {
         "tags": [
@@ -442,7 +454,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`PUT /v1/admin/relations`"
       },
       "delete": {
         "tags": [
@@ -472,7 +485,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`DELETE /v1/admin/relations`"
       }
     },
     "/v1/admin/relations/check": {
@@ -527,7 +541,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`GET /v1/admin/relations/check`"
       }
     },
     "/v1/admin/ui/{page}": {
@@ -535,7 +550,7 @@
         "tags": [
           "admin-ui"
         ],
-        "summary": "`GET /v1/admin/ui/gate` — RFW definition of the telemetry page.",
+        "summary": "`GET /v1/admin/ui/{page}`",
         "operationId": "get_admin_ui",
         "parameters": [
           {
@@ -568,7 +583,8 @@
           {
             "email8:gate:telemetry:read": []
           }
-        ]
+        ],
+        "description": "`GET /v1/admin/ui/gate` - RFW definition of the telemetry page."
       }
     },
     "/v1/admin/{page}": {
@@ -576,7 +592,7 @@
         "tags": [
           "admin-ui"
         ],
-        "summary": "`POST /v1/admin/gate` — page data: counters + listener table split by\nthe sub-endpoint path the RFW widgets post to.",
+        "summary": "`POST /v1/admin/{page}`",
         "operationId": "admin_data",
         "parameters": [
           {
@@ -606,7 +622,8 @@
           {
             "email8:gate:telemetry:read": []
           }
-        ]
+        ],
+        "description": "`POST /v1/admin/gate` - page data: counters + listener table split by\nthe sub-endpoint path the RFW widgets post to."
       }
     },
     "/v1/gate/telemetry": {
@@ -614,7 +631,7 @@
         "tags": [
           "email8-gate"
         ],
-        "summary": "Spec wrapper for the inline `/v1/gate/telemetry` closure.",
+        "summary": "`GET /v1/gate/telemetry`",
         "operationId": "gate_telemetry_spec",
         "responses": {
           "200": {
@@ -626,7 +643,8 @@
             }
           }
         },
-        "security": []
+        "security": [],
+        "description": "Spec wrapper for the inline `/v1/gate/telemetry` closure."
       }
     },
     "/v1/health": {
@@ -634,7 +652,7 @@
         "tags": [
           "email8-gate"
         ],
-        "summary": "Spec wrapper for the inline `/v1/health` closure.",
+        "summary": "`GET /v1/health`",
         "operationId": "gate_health_spec",
         "responses": {
           "200": {
@@ -646,7 +664,8 @@
             }
           }
         },
-        "security": []
+        "security": [],
+        "description": "Spec wrapper for the inline `/v1/health` closure."
       }
     }
   },
@@ -654,7 +673,7 @@
     "schemas": {
       "DeleteAttributeQuery": {
         "type": "object",
-        "description": "`DELETE /v1/admin/attributes` query — identifies the attribute.",
+        "description": "`DELETE /v1/admin/attributes` query - identifies the attribute.",
         "required": [
           "subject_id",
           "attr_key"
@@ -676,7 +695,7 @@
       },
       "DeleteRelationQuery": {
         "type": "object",
-        "description": "`DELETE /v1/admin/relations` query — identifies the tuple.",
+        "description": "`DELETE /v1/admin/relations` query - identifies the tuple.",
         "required": [
           "subject_type",
           "subject_id",
@@ -710,7 +729,7 @@
       },
       "ListAttributesQuery": {
         "type": "object",
-        "description": "`GET /v1/admin/attributes` query — list attributes for one subject (or\nall subjects in the env when omitted).",
+        "description": "`GET /v1/admin/attributes` query - list attributes for one subject (or\nall subjects in the env when omitted).",
         "properties": {
           "subject_id": {
             "type": [
@@ -746,7 +765,7 @@
       },
       "PutAttributeBody": {
         "type": "object",
-        "description": "`PUT /v1/admin/attributes` body — one principal attribute.",
+        "description": "`PUT /v1/admin/attributes` body - one principal attribute.",
         "required": [
           "subject_id",
           "attr_key",
@@ -797,7 +816,7 @@
       },
       "PutRelationBody": {
         "type": "object",
-        "description": "`PUT /v1/admin/relations` body — one relation tuple.",
+        "description": "`PUT /v1/admin/relations` body - one relation tuple.",
         "required": [
           "subject_type",
           "subject_id",
@@ -825,7 +844,7 @@
       },
       "RelationCheckQuery": {
         "type": "object",
-        "description": "`GET /v1/admin/relations/check` query — Zanzibar-style dry-run.",
+        "description": "`GET /v1/admin/relations/check` query - Zanzibar-style dry-run.",
         "required": [
           "subject_type",
           "subject_id",
@@ -907,7 +926,7 @@
   "tags": [
     {
       "name": "email8-gate",
-      "description": "Sentin8 Email8:Gate — the mail-protocol ingress (IMAP/POP3/SMTP/DAV proxy)"
+      "description": "Sentin8 Email8:Gate - the mail-protocol ingress (IMAP/POP3/SMTP/DAV proxy)"
     },
     {
       "name": "admin-ui",

@@ -2,7 +2,7 @@
   "openapi": "3.1.0",
   "info": {
     "title": "email8-access",
-    "description": "Sentin8 Email8:Access — IMAP, POP3, ManageSieve, CalDAV/CardDAV/WebDAV protocol services.",
+    "description": "Sentin8 Email8:Access - IMAP, POP3, ManageSieve, CalDAV/CardDAV/WebDAV protocol services.",
     "license": {
       "name": "MIT OR Apache-2.0",
       "identifier": "MIT OR Apache-2.0"
@@ -15,7 +15,7 @@
         "tags": [
           "dav"
         ],
-        "summary": "The bare `/dav` entry — axum's `Path<String>` cannot match zero\npath arguments, so the collection root gets its own wrapper.",
+        "summary": "`DELETE /dav`",
         "operationId": "dispatch_root",
         "responses": {
           "200": {
@@ -32,7 +32,8 @@
           {
             "email8:access:dav": []
           }
-        ]
+        ],
+        "description": "The bare `/dav` entry - axum's `Path<String>` cannot match zero\npath arguments, so the collection root gets its own wrapper."
       }
     },
     "/dav/{path}": {
@@ -40,7 +41,7 @@
         "tags": [
           "dav"
         ],
-        "summary": "The main DAV dispatcher: `/dav/{*path}` any-method.",
+        "summary": "`DELETE /dav/{path}`",
         "operationId": "dispatch",
         "responses": {
           "200": {
@@ -57,7 +58,8 @@
           {
             "email8:access:dav": []
           }
-        ]
+        ],
+        "description": "The main DAV dispatcher: `/dav/{*path}` any-method."
       }
     },
     "/v1/admin/attributes": {
@@ -86,7 +88,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`GET /v1/admin/attributes`"
       },
       "put": {
         "tags": [
@@ -121,7 +124,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`PUT /v1/admin/attributes`"
       },
       "delete": {
         "tags": [
@@ -151,7 +155,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`DELETE /v1/admin/attributes`"
       }
     },
     "/v1/admin/policy-sets": {
@@ -180,7 +185,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`GET /v1/admin/policy-sets`"
       }
     },
     "/v1/admin/policy-sets/disable": {
@@ -209,7 +215,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`POST /v1/admin/policy-sets/disable`"
       }
     },
     "/v1/admin/policy-sets/enforce": {
@@ -238,7 +245,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`POST /v1/admin/policy-sets/enforce`"
       }
     },
     "/v1/admin/policy-sets/shadow": {
@@ -267,7 +275,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`POST /v1/admin/policy-sets/shadow`"
       }
     },
     "/v1/admin/policy-sets/{name}": {
@@ -307,7 +316,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`GET /v1/admin/policy-sets/{name}`"
       },
       "put": {
         "tags": [
@@ -353,7 +363,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`PUT /v1/admin/policy-sets/{name}`"
       },
       "delete": {
         "tags": [
@@ -383,7 +394,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`DELETE /v1/admin/policy-sets/{name}`"
       }
     },
     "/v1/admin/policy-sets/{name}/test": {
@@ -428,7 +440,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`POST /v1/admin/policy-sets/{name}/test`"
       }
     },
     "/v1/admin/relations": {
@@ -457,7 +470,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`GET /v1/admin/relations`"
       },
       "put": {
         "tags": [
@@ -492,7 +506,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`PUT /v1/admin/relations`"
       },
       "delete": {
         "tags": [
@@ -522,7 +537,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`DELETE /v1/admin/relations`"
       }
     },
     "/v1/admin/relations/check": {
@@ -577,7 +593,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`GET /v1/admin/relations/check`"
       }
     },
     "/v1/health": {
@@ -596,7 +613,8 @@
             }
           }
         },
-        "security": []
+        "security": [],
+        "summary": "`GET /v1/health`"
       }
     }
   },
@@ -604,7 +622,7 @@
     "schemas": {
       "DeleteAttributeQuery": {
         "type": "object",
-        "description": "`DELETE /v1/admin/attributes` query — identifies the attribute.",
+        "description": "`DELETE /v1/admin/attributes` query - identifies the attribute.",
         "required": [
           "subject_id",
           "attr_key"
@@ -626,7 +644,7 @@
       },
       "DeleteRelationQuery": {
         "type": "object",
-        "description": "`DELETE /v1/admin/relations` query — identifies the tuple.",
+        "description": "`DELETE /v1/admin/relations` query - identifies the tuple.",
         "required": [
           "subject_type",
           "subject_id",
@@ -660,7 +678,7 @@
       },
       "ListAttributesQuery": {
         "type": "object",
-        "description": "`GET /v1/admin/attributes` query — list attributes for one subject (or\nall subjects in the env when omitted).",
+        "description": "`GET /v1/admin/attributes` query - list attributes for one subject (or\nall subjects in the env when omitted).",
         "properties": {
           "subject_id": {
             "type": [
@@ -696,7 +714,7 @@
       },
       "PutAttributeBody": {
         "type": "object",
-        "description": "`PUT /v1/admin/attributes` body — one principal attribute.",
+        "description": "`PUT /v1/admin/attributes` body - one principal attribute.",
         "required": [
           "subject_id",
           "attr_key",
@@ -747,7 +765,7 @@
       },
       "PutRelationBody": {
         "type": "object",
-        "description": "`PUT /v1/admin/relations` body — one relation tuple.",
+        "description": "`PUT /v1/admin/relations` body - one relation tuple.",
         "required": [
           "subject_type",
           "subject_id",
@@ -775,7 +793,7 @@
       },
       "RelationCheckQuery": {
         "type": "object",
-        "description": "`GET /v1/admin/relations/check` query — Zanzibar-style dry-run.",
+        "description": "`GET /v1/admin/relations/check` query - Zanzibar-style dry-run.",
         "required": [
           "subject_type",
           "subject_id",
@@ -857,7 +875,7 @@
   "tags": [
     {
       "name": "email8-access",
-      "description": "Sentin8 Email8:Access — IMAP, POP3, ManageSieve, DAV protocol services"
+      "description": "Sentin8 Email8:Access - IMAP, POP3, ManageSieve, DAV protocol services"
     },
     {
       "name": "dav",

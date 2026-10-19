@@ -2,7 +2,7 @@
   "openapi": "3.1.0",
   "info": {
     "title": "email8-mta",
-    "description": "Sentin8 Email8:Mta — SMTP/LMTP transfer engine, queue, DKIM, reports.",
+    "description": "Sentin8 Email8:Mta - SMTP/LMTP transfer engine, queue, DKIM, reports.",
     "license": {
       "name": "MIT OR Apache-2.0",
       "identifier": "MIT OR Apache-2.0"
@@ -36,7 +36,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`GET /v1/admin/attributes`"
       },
       "put": {
         "tags": [
@@ -71,7 +72,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`PUT /v1/admin/attributes`"
       },
       "delete": {
         "tags": [
@@ -101,7 +103,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`DELETE /v1/admin/attributes`"
       }
     },
     "/v1/admin/policy-sets": {
@@ -130,7 +133,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`GET /v1/admin/policy-sets`"
       }
     },
     "/v1/admin/policy-sets/disable": {
@@ -159,7 +163,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`POST /v1/admin/policy-sets/disable`"
       }
     },
     "/v1/admin/policy-sets/enforce": {
@@ -188,7 +193,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`POST /v1/admin/policy-sets/enforce`"
       }
     },
     "/v1/admin/policy-sets/shadow": {
@@ -217,7 +223,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`POST /v1/admin/policy-sets/shadow`"
       }
     },
     "/v1/admin/policy-sets/{name}": {
@@ -257,7 +264,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`GET /v1/admin/policy-sets/{name}`"
       },
       "put": {
         "tags": [
@@ -303,7 +311,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`PUT /v1/admin/policy-sets/{name}`"
       },
       "delete": {
         "tags": [
@@ -333,7 +342,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`DELETE /v1/admin/policy-sets/{name}`"
       }
     },
     "/v1/admin/policy-sets/{name}/test": {
@@ -378,7 +388,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`POST /v1/admin/policy-sets/{name}/test`"
       }
     },
     "/v1/admin/relations": {
@@ -407,7 +418,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`GET /v1/admin/relations`"
       },
       "put": {
         "tags": [
@@ -442,7 +454,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`PUT /v1/admin/relations`"
       },
       "delete": {
         "tags": [
@@ -472,7 +485,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`DELETE /v1/admin/relations`"
       }
     },
     "/v1/admin/relations/check": {
@@ -527,7 +541,8 @@
           {
             "sentin8:admin": []
           }
-        ]
+        ],
+        "summary": "`GET /v1/admin/relations/check`"
       }
     },
     "/v1/admin/{page}": {
@@ -535,7 +550,7 @@
         "tags": [
           "admin-ui"
         ],
-        "summary": "`GET /v1/admin/ui/{page}` — RFW definitions.",
+        "summary": "`GET /v1/admin/{page}`",
         "operationId": "get_admin_ui",
         "parameters": [
           {
@@ -568,13 +583,14 @@
           {
             "email8:admin:queue": []
           }
-        ]
+        ],
+        "description": "`GET /v1/admin/ui/{page}` - RFW definitions."
       },
       "post": {
         "tags": [
           "email8-mta"
         ],
-        "summary": "`POST /v1/admin/{page}` — data endpoints.",
+        "summary": "`POST /v1/admin/{page}`",
         "operationId": "admin_data",
         "parameters": [
           {
@@ -615,7 +631,8 @@
           "404": {
             "description": "Unknown page"
           }
-        }
+        },
+        "description": "data endpoints."
       }
     },
     "/v1/health": {
@@ -634,7 +651,8 @@
             }
           }
         },
-        "security": []
+        "security": [],
+        "summary": "`GET /v1/health`"
       }
     },
     "/v1/internal/submit": {
@@ -642,7 +660,7 @@
         "tags": [
           "email8-mta"
         ],
-        "summary": "`POST /v1/internal/submit` — the JMAP/Store submit path.",
+        "summary": "`POST /v1/internal/submit`",
         "operationId": "submit",
         "requestBody": {
           "content": {
@@ -674,7 +692,8 @@
           "404": {
             "description": "Blob not found in Storage"
           }
-        }
+        },
+        "description": "the JMAP/Store submit path."
       }
     }
   },
@@ -737,7 +756,7 @@
           "user_sub": {
             "type": "string",
             "format": "uuid",
-            "description": "Sentin8:Auth user `sub` — re-verified by Mta from claims."
+            "description": "Sentin8:Auth user `sub` - re-verified by Mta from claims."
           }
         }
       },
@@ -753,7 +772,7 @@
               "null"
             ],
             "format": "date-time",
-            "description": "Earliest due event (retry/notify/expiry) — informational."
+            "description": "Earliest due event (retry/notify/expiry) - informational."
           },
           "queue_id": {
             "type": "string",
@@ -771,7 +790,7 @@
     },
     {
       "name": "email8-mta",
-      "description": "Sentin8 Email8:Mta — SMTP transfer engine, queue, DKIM, reports"
+      "description": "Sentin8 Email8:Mta - SMTP transfer engine, queue, DKIM, reports"
     }
   ]
 }
