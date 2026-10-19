@@ -1,0 +1,466 @@
+[
+  {
+    "type": "category",
+    "label": "store",
+    "link": {
+      "type": "doc",
+      "id": "api/store/email-8-store"
+    },
+    "items": [
+      {
+        "type": "doc",
+        "id": "api/store/email-8-store",
+        "label": "Overview",
+        "className": "api-overview"
+      },
+      {
+        "type": "category",
+        "label": "jmap",
+        "link": {
+          "type": "doc",
+          "id": "api/store/download"
+        },
+        "items": [
+          {
+            "type": "doc",
+            "id": "api/store/download",
+            "label": "`GET jmap/download/{account_id}/{blob_id}/{name}`",
+            "className": "api-method get"
+          },
+          {
+            "type": "doc",
+            "id": "api/store/event-source",
+            "label": "`GET jmap/eventsource`",
+            "className": "api-method get"
+          },
+          {
+            "type": "doc",
+            "id": "api/store/session",
+            "label": "`GET jmap/session`",
+            "className": "api-method get"
+          },
+          {
+            "type": "doc",
+            "id": "api/store/upload",
+            "label": "`POST jmap/upload/{account_id}`",
+            "className": "api-method post"
+          },
+          {
+            "type": "doc",
+            "id": "api/store/jmap-ws",
+            "label": "`GET jmap/ws`",
+            "className": "api-method get"
+          },
+          {
+            "type": "doc",
+            "id": "api/store/api",
+            "label": "`POST jmap`",
+            "className": "api-method post"
+          }
+        ],
+        "collapsed": true
+      },
+      {
+        "type": "category",
+        "label": "v1",
+        "link": {
+          "type": "doc",
+          "id": "api/store/get-admin-ui"
+        },
+        "items": [
+          {
+            "type": "category",
+            "label": "v1/admin",
+            "link": {
+              "type": "doc",
+              "id": "api/store/get-admin-ui"
+            },
+            "items": [
+              {
+                "type": "category",
+                "label": "v1/admin/{page}",
+                "link": {
+                  "type": "doc",
+                  "id": "api/store/get-admin-ui"
+                },
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "api/store/get-admin-ui",
+                    "label": "`GET v1/admin/{page}`",
+                    "className": "api-method get"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "api/store/admin-data",
+                    "label": "`POST v1/admin/{page}`",
+                    "className": "api-method post"
+                  }
+                ],
+                "collapsed": true
+              },
+              {
+                "type": "category",
+                "label": "v1/admin/attributes",
+                "link": {
+                  "type": "doc",
+                  "id": "api/store/policy-delete-attribute"
+                },
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "api/store/policy-delete-attribute",
+                    "label": "`DELETE v1/admin/attributes`",
+                    "className": "api-method delete"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "api/store/policy-list-attributes",
+                    "label": "`GET v1/admin/attributes`",
+                    "className": "api-method get"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "api/store/policy-put-attribute",
+                    "label": "`PUT v1/admin/attributes`",
+                    "className": "api-method put"
+                  }
+                ],
+                "collapsed": true
+              },
+              {
+                "type": "category",
+                "label": "v1/admin/policy-sets",
+                "link": {
+                  "type": "doc",
+                  "id": "api/store/policy-test-set"
+                },
+                "items": [
+                  {
+                    "type": "category",
+                    "label": "v1/admin/policy-sets/{name}",
+                    "link": {
+                      "type": "doc",
+                      "id": "api/store/policy-test-set"
+                    },
+                    "items": [
+                      {
+                        "type": "doc",
+                        "id": "api/store/policy-test-set",
+                        "label": "`POST v1/admin/policy-sets/{name}/test`",
+                        "className": "api-method post"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "api/store/policy-delete-set",
+                        "label": "`DELETE v1/admin/policy-sets/{name}`",
+                        "className": "api-method delete"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "api/store/policy-get-set",
+                        "label": "`GET v1/admin/policy-sets/{name}`",
+                        "className": "api-method get"
+                      },
+                      {
+                        "type": "doc",
+                        "id": "api/store/policy-put-set",
+                        "label": "`PUT v1/admin/policy-sets/{name}`",
+                        "className": "api-method put"
+                      }
+                    ],
+                    "collapsed": true
+                  },
+                  {
+                    "type": "doc",
+                    "id": "api/store/policy-mode-disable",
+                    "label": "`POST v1/admin/policy-sets/disable`",
+                    "className": "api-method post"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "api/store/policy-mode-enforce",
+                    "label": "`POST v1/admin/policy-sets/enforce`",
+                    "className": "api-method post"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "api/store/policy-mode-shadow",
+                    "label": "`POST v1/admin/policy-sets/shadow`",
+                    "className": "api-method post"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "api/store/policy-list-sets",
+                    "label": "`GET v1/admin/policy-sets`",
+                    "className": "api-method get"
+                  }
+                ],
+                "collapsed": true
+              },
+              {
+                "type": "category",
+                "label": "v1/admin/relations",
+                "link": {
+                  "type": "doc",
+                  "id": "api/store/policy-check-relation"
+                },
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "api/store/policy-check-relation",
+                    "label": "`GET v1/admin/relations/check`",
+                    "className": "api-method get"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "api/store/policy-delete-relation",
+                    "label": "`DELETE v1/admin/relations`",
+                    "className": "api-method delete"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "api/store/policy-list-relations",
+                    "label": "`GET v1/admin/relations`",
+                    "className": "api-method get"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "api/store/policy-put-relation",
+                    "label": "`PUT v1/admin/relations`",
+                    "className": "api-method put"
+                  }
+                ],
+                "collapsed": true
+              }
+            ],
+            "collapsed": true
+          },
+          {
+            "type": "doc",
+            "id": "api/store/health",
+            "label": "`GET v1/health`",
+            "className": "api-method get"
+          },
+          {
+            "type": "category",
+            "label": "v1/internal",
+            "link": {
+              "type": "doc",
+              "id": "api/store/acl-grant"
+            },
+            "items": [
+              {
+                "type": "category",
+                "label": "v1/internal/acl",
+                "link": {
+                  "type": "doc",
+                  "id": "api/store/acl-grant"
+                },
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "api/store/acl-grant",
+                    "label": "`POST v1/internal/acl/grant`",
+                    "className": "api-method post"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "api/store/acl-revoke",
+                    "label": "`POST v1/internal/acl/revoke`",
+                    "className": "api-method post"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "api/store/acl-effective-rights",
+                    "label": "`GET v1/internal/acl/rights`",
+                    "className": "api-method get"
+                  }
+                ],
+                "collapsed": true
+              },
+              {
+                "type": "doc",
+                "id": "api/store/blob-quota",
+                "label": "`POST v1/internal/blob-quota`",
+                "className": "api-method post"
+              },
+              {
+                "type": "doc",
+                "id": "api/store/changes-since",
+                "label": "`POST v1/internal/changes`",
+                "className": "api-method post"
+              },
+              {
+                "type": "category",
+                "label": "v1/internal/email",
+                "link": {
+                  "type": "doc",
+                  "id": "api/store/get-email"
+                },
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "api/store/get-email",
+                    "label": "`GET v1/internal/email/{env_id}/{account_id}/{email_id}`",
+                    "className": "api-method get"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "api/store/set-email-keywords",
+                    "label": "`POST v1/internal/email/keywords`",
+                    "className": "api-method post"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "api/store/store-raw-blob",
+                    "label": "`POST v1/internal/email/store`",
+                    "className": "api-method post"
+                  }
+                ],
+                "collapsed": true
+              },
+              {
+                "type": "category",
+                "label": "v1/internal/emails",
+                "link": {
+                  "type": "doc",
+                  "id": "api/store/copy-emails"
+                },
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "api/store/copy-emails",
+                    "label": "`POST v1/internal/emails/copy`",
+                    "className": "api-method post"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "api/store/destroy-emails",
+                    "label": "`POST v1/internal/emails/destroy`",
+                    "className": "api-method post"
+                  }
+                ],
+                "collapsed": true
+              },
+              {
+                "type": "category",
+                "label": "v1/internal/ingest",
+                "link": {
+                  "type": "doc",
+                  "id": "api/store/ingest-append"
+                },
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "api/store/ingest-append",
+                    "label": "`POST v1/internal/ingest/append`",
+                    "className": "api-method post"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "api/store/ingest",
+                    "label": "`POST v1/internal/ingest`",
+                    "className": "api-method post"
+                  }
+                ],
+                "collapsed": true
+              },
+              {
+                "type": "doc",
+                "id": "api/store/list-mailbox-emails",
+                "label": "`GET v1/internal/mailbox/emails`",
+                "className": "api-method get"
+              },
+              {
+                "type": "category",
+                "label": "v1/internal/mailboxes",
+                "link": {
+                  "type": "doc",
+                  "id": "api/store/list-mailboxes"
+                },
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "api/store/list-mailboxes",
+                    "label": "`GET v1/internal/mailboxes`",
+                    "className": "api-method get"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "api/store/create-mailbox",
+                    "label": "`POST v1/internal/mailboxes`",
+                    "className": "api-method post"
+                  }
+                ],
+                "collapsed": true
+              },
+              {
+                "type": "doc",
+                "id": "api/store/resolve-address",
+                "label": "`POST v1/internal/resolve`",
+                "className": "api-method post"
+              },
+              {
+                "type": "category",
+                "label": "v1/internal/sieve",
+                "link": {
+                  "type": "doc",
+                  "id": "api/store/sieve-delete"
+                },
+                "items": [
+                  {
+                    "type": "doc",
+                    "id": "api/store/sieve-delete",
+                    "label": "`POST v1/internal/sieve/delete`",
+                    "className": "api-method post"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "api/store/sieve-get",
+                    "label": "`POST v1/internal/sieve/get`",
+                    "className": "api-method post"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "api/store/sieve-list",
+                    "label": "`POST v1/internal/sieve/list`",
+                    "className": "api-method post"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "api/store/sieve-put",
+                    "label": "`POST v1/internal/sieve/put`",
+                    "className": "api-method post"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "api/store/sieve-rename",
+                    "label": "`POST v1/internal/sieve/rename`",
+                    "className": "api-method post"
+                  },
+                  {
+                    "type": "doc",
+                    "id": "api/store/sieve-set-active",
+                    "label": "`POST v1/internal/sieve/setactive`",
+                    "className": "api-method post"
+                  }
+                ],
+                "collapsed": true
+              },
+              {
+                "type": "doc",
+                "id": "api/store/submit",
+                "label": "`POST v1/internal/submit`",
+                "className": "api-method post"
+              }
+            ],
+            "collapsed": true
+          }
+        ],
+        "collapsed": true
+      }
+    ],
+    "collapsed": true
+  }
+]
