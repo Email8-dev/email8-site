@@ -1,0 +1,316 @@
+import type { SidebarsConfig } from "@docusaurus/plugin-content-docs";
+
+const sidebar: SidebarsConfig = {
+  apisidebar: [
+    {
+      type: "category",
+      label: "policy",
+      link: {
+        type: "doc",
+        id: "api/store/email-8-store",
+      },
+      items: [
+        {
+          type: "doc",
+          id: "api/store/policy-list-attributes",
+          label: "policy_list_attributes",
+          className: "api-method get",
+        },
+        {
+          type: "doc",
+          id: "api/store/policy-put-attribute",
+          label: "policy_put_attribute",
+          className: "api-method put",
+        },
+        {
+          type: "doc",
+          id: "api/store/policy-delete-attribute",
+          label: "policy_delete_attribute",
+          className: "api-method delete",
+        },
+        {
+          type: "doc",
+          id: "api/store/policy-list-sets",
+          label: "policy_list_sets",
+          className: "api-method get",
+        },
+        {
+          type: "doc",
+          id: "api/store/policy-mode-disable",
+          label: "policy_mode_disable",
+          className: "api-method post",
+        },
+        {
+          type: "doc",
+          id: "api/store/policy-mode-enforce",
+          label: "policy_mode_enforce",
+          className: "api-method post",
+        },
+        {
+          type: "doc",
+          id: "api/store/policy-mode-shadow",
+          label: "policy_mode_shadow",
+          className: "api-method post",
+        },
+        {
+          type: "doc",
+          id: "api/store/policy-get-set",
+          label: "policy_get_set",
+          className: "api-method get",
+        },
+        {
+          type: "doc",
+          id: "api/store/policy-put-set",
+          label: "policy_put_set",
+          className: "api-method put",
+        },
+        {
+          type: "doc",
+          id: "api/store/policy-delete-set",
+          label: "policy_delete_set",
+          className: "api-method delete",
+        },
+        {
+          type: "doc",
+          id: "api/store/policy-test-set",
+          label: "policy_test_set",
+          className: "api-method post",
+        },
+        {
+          type: "doc",
+          id: "api/store/policy-list-relations",
+          label: "policy_list_relations",
+          className: "api-method get",
+        },
+        {
+          type: "doc",
+          id: "api/store/policy-put-relation",
+          label: "policy_put_relation",
+          className: "api-method put",
+        },
+        {
+          type: "doc",
+          id: "api/store/policy-delete-relation",
+          label: "policy_delete_relation",
+          className: "api-method delete",
+        },
+        {
+          type: "doc",
+          id: "api/store/policy-check-relation",
+          label: "policy_check_relation",
+          className: "api-method get",
+        },
+      ],
+    },
+    {
+      type: "category",
+      label: "email8-store",
+      link: {
+        type: "doc",
+        id: "api/store/email-8-store",
+      },
+      items: [
+        {
+          type: "doc",
+          id: "api/store/admin-data",
+          label: "`POST /v1/admin/{page}` — data for the admin viewer pages.",
+          className: "api-method post",
+        },
+      ],
+    },
+    {
+      type: "category",
+      label: "store",
+      items: [
+        {
+          type: "doc",
+          id: "api/store/api",
+          label: "`POST /jmap` — the method-call batch.",
+          className: "api-method post",
+        },
+        {
+          type: "doc",
+          id: "api/store/download",
+          label: "`GET /jmap/download/{account_id}/{blob_hash}/{name}` — blob download.",
+          className: "api-method get",
+        },
+        {
+          type: "doc",
+          id: "api/store/event-source",
+          label: "event_source",
+          className: "api-method get",
+        },
+        {
+          type: "doc",
+          id: "api/store/session",
+          label: "`GET /jmap/session` — the RFC 8620 session resource.",
+          className: "api-method get",
+        },
+        {
+          type: "doc",
+          id: "api/store/upload",
+          label: "`POST /jmap/upload/{account_id}` — blob upload (RFC 9404).",
+          className: "api-method post",
+        },
+        {
+          type: "doc",
+          id: "api/store/jmap-ws",
+          label: "`GET /jmap/ws` — RFC 8887 JMAP over WebSocket. After the upgrade the\nserver accepts JMAP `Request` frames as text messages and replies with\n`Response` frames; unsolicited `StateChange` pushes are emitted when\nthe changelog advances. Auth is via the `access_token` query param\n(browsers cannot set headers on the upgrade request).",
+          className: "api-method get",
+        },
+        {
+          type: "doc",
+          id: "api/store/get-admin-ui",
+          label: "`GET /v1/admin/ui/{page}` — RFW definition for the requested page.",
+          className: "api-method get",
+        },
+        {
+          type: "doc",
+          id: "api/store/health",
+          label: "health",
+          className: "api-method get",
+        },
+        {
+          type: "doc",
+          id: "api/store/acl-grant",
+          label: "acl_grant",
+          className: "api-method post",
+        },
+        {
+          type: "doc",
+          id: "api/store/acl-revoke",
+          label: "acl_revoke",
+          className: "api-method post",
+        },
+        {
+          type: "doc",
+          id: "api/store/acl-effective-rights",
+          label: "acl_effective_rights",
+          className: "api-method get",
+        },
+        {
+          type: "doc",
+          id: "api/store/blob-quota",
+          label: "`POST /v1/internal/blob-quota` — upload quota gate.",
+          className: "api-method post",
+        },
+        {
+          type: "doc",
+          id: "api/store/changes-since",
+          label: "`POST /v1/internal/changes` — changelog window (JMAP/IMAP sync).",
+          className: "api-method post",
+        },
+        {
+          type: "doc",
+          id: "api/store/set-email-keywords",
+          label: "set_email_keywords",
+          className: "api-method post",
+        },
+        {
+          type: "doc",
+          id: "api/store/store-raw-blob",
+          label: "`POST /v1/internal/email/store` — store the raw blob for an APPEND\n(IMAP/POP3 upload path): bytes → Storage, blob-hash returned.",
+          className: "api-method post",
+        },
+        {
+          type: "doc",
+          id: "api/store/get-email",
+          label: "get_email",
+          className: "api-method get",
+        },
+        {
+          type: "doc",
+          id: "api/store/copy-emails",
+          label: "copy_emails",
+          className: "api-method post",
+        },
+        {
+          type: "doc",
+          id: "api/store/destroy-emails",
+          label: "destroy_emails",
+          className: "api-method post",
+        },
+        {
+          type: "doc",
+          id: "api/store/ingest",
+          label: "`POST /v1/internal/ingest` — local delivery filing.",
+          className: "api-method post",
+        },
+        {
+          type: "doc",
+          id: "api/store/ingest-append",
+          label: "ingest_append",
+          className: "api-method post",
+        },
+        {
+          type: "doc",
+          id: "api/store/list-mailbox-emails",
+          label: "list_mailbox_emails",
+          className: "api-method get",
+        },
+        {
+          type: "doc",
+          id: "api/store/list-mailboxes",
+          label: "list_mailboxes",
+          className: "api-method get",
+        },
+        {
+          type: "doc",
+          id: "api/store/create-mailbox",
+          label: "`POST /v1/internal/mailboxes` — create a mailbox.",
+          className: "api-method post",
+        },
+        {
+          type: "doc",
+          id: "api/store/resolve-address",
+          label: "`POST /v1/internal/resolve` — RCPT resolution (sub-addressing, aliases,\ncatch-all, group expansion).",
+          className: "api-method post",
+        },
+        {
+          type: "doc",
+          id: "api/store/sieve-delete",
+          label: "`POST /v1/internal/sieve/delete` — remove a script row.",
+          className: "api-method post",
+        },
+        {
+          type: "doc",
+          id: "api/store/sieve-get",
+          label: "`POST /v1/internal/sieve/get` — one script's source (from Storage).",
+          className: "api-method post",
+        },
+        {
+          type: "doc",
+          id: "api/store/sieve-list",
+          label: "`POST /v1/internal/sieve/list` — the account's scripts + active flag.",
+          className: "api-method post",
+        },
+        {
+          type: "doc",
+          id: "api/store/sieve-put",
+          label: "`POST /v1/internal/sieve/put` — store a compiled script (blob →\nStorage, row upsert).",
+          className: "api-method post",
+        },
+        {
+          type: "doc",
+          id: "api/store/sieve-rename",
+          label: "`POST /v1/internal/sieve/rename` — rename a script.",
+          className: "api-method post",
+        },
+        {
+          type: "doc",
+          id: "api/store/sieve-set-active",
+          label: "`POST /v1/internal/sieve/setactive` — flip the active script (only one\nmay be active; the row flips + the account pointer updates).",
+          className: "api-method post",
+        },
+        {
+          type: "doc",
+          id: "api/store/submit",
+          label: "`POST /v1/internal/submit` — enqueue a submission into the Mta queue.\nStore proxies to Mta (it owns the queue); the response is Mta's.",
+          className: "api-method post",
+        },
+      ],
+    },
+  ],
+};
+
+export default sidebar.apisidebar;

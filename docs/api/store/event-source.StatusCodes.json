@@ -1,0 +1,1 @@
+{"responses":{"200":{"description":"JMAP EventSource SSE stream (push notifications)","content":{"application/json":{"schema":{}}}}}}

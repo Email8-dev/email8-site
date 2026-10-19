@@ -1,0 +1,1 @@
+{"responses":{"200":{"description":"Page data","content":{"application/json":{"schema":{}}}},"400":{"description":"Missing target_env_id"},"403":{"description":"Missing email8 admin scope"},"404":{"description":"Unknown page"}}}

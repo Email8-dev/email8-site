@@ -1,0 +1,34 @@
+{
+  "mta": {
+    "specPath": "openapi/mta-spec.json",
+    "outputDir": "docs/api/mta",
+    "sidebarOptions": {
+      "groupPathsBy": "tag",
+      "categoryLinkSource": "info"
+    }
+  },
+  "store": {
+    "specPath": "openapi/store-spec.json",
+    "outputDir": "docs/api/store",
+    "sidebarOptions": {
+      "groupPathsBy": "tag",
+      "categoryLinkSource": "info"
+    }
+  },
+  "access": {
+    "specPath": "openapi/access-spec.json",
+    "outputDir": "docs/api/access",
+    "sidebarOptions": {
+      "groupPathsBy": "tag",
+      "categoryLinkSource": "info"
+    }
+  },
+  "gate": {
+    "specPath": "openapi/gate-spec.json",
+    "outputDir": "docs/api/gate",
+    "sidebarOptions": {
+      "groupPathsBy": "tag",
+      "categoryLinkSource": "info"
+    }
+  }
+}

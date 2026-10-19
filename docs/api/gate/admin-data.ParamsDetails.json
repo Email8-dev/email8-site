@@ -1,0 +1,1 @@
+{"parameters":[{"name":"page","in":"path","description":"Admin data page (telemetry)","required":true,"schema":{"type":"string"}}]}

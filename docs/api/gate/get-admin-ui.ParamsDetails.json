@@ -1,0 +1,1 @@
+{"parameters":[{"name":"page","in":"path","description":"RFW page name (gate telemetry)","required":true,"schema":{"type":"string"}}]}

@@ -1,0 +1,1 @@
+{"responses":{"200":{"description":"The email","content":{"application/json":{"schema":{}}}},"404":{"description":"Unknown email"}}}

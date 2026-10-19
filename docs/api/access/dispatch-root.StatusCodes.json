@@ -1,0 +1,1 @@
+{"responses":{"200":{"description":"DAV collection-root response (the bare /dav entry)"},"207":{"description":"Multi-Status (PROPFIND)"},"401":{"description":"Not authenticated"}}}

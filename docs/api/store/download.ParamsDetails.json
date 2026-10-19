@@ -1,0 +1,1 @@
+{"parameters":[{"name":"account_id","in":"path","description":"JMAP account id","required":true,"schema":{"type":"string"}},{"name":"blob_id","in":"path","description":"Blob id","required":true,"schema":{"type":"string"}},{"name":"name","in":"path","description":"Download filename","required":true,"schema":{"type":"string"}}]}

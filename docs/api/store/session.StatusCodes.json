@@ -1,0 +1,1 @@
+{"responses":{"200":{"description":"JMAP session (capabilities + endpoint URLs)","content":{"application/json":{"schema":{}}}},"401":{"description":"Not authenticated"}}}

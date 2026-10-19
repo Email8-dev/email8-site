@@ -1,0 +1,1 @@
+{"responses":{"200":{"description":"DAV response (CalDAV/CardDAV over RFC 4918; request-body protocol)"},"207":{"description":"Multi-Status (PROPFIND)"},"401":{"description":"Not authenticated"}}}

@@ -1,0 +1,1 @@
+{"responses":{"200":{"description":"JMAP request/response batch (RFC 8620 §3.6)","content":{"application/json":{"schema":{}}}},"401":{"description":"Not authenticated"}}}

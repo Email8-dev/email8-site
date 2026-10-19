@@ -1,0 +1,1 @@
+{"parameters":[{"name":"env_id","in":"path","description":"Env id","required":true,"schema":{"type":"string"}},{"name":"account_id","in":"path","description":"Account id","required":true,"schema":{"type":"string"}},{"name":"email_id","in":"path","description":"Email id","required":true,"schema":{"type":"string"}}]}
