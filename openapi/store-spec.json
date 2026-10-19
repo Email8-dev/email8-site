@@ -39,7 +39,7 @@
           }
         },
         "security": [],
-        "description": "the method-call batch."
+        "description": "Api .\n\nthe method-call batch."
       }
     },
     "/jmap/download/{account_id}/{blob_id}/{name}": {
@@ -84,7 +84,7 @@
           }
         },
         "security": [],
-        "description": "`GET /jmap/download/{account_id}/{blob_hash}/{name}` - blob download."
+        "description": "Download .\n\n`GET /jmap/download/{account_id}/{blob_hash}/{name}` - blob download."
       }
     },
     "/jmap/eventsource": {
@@ -104,6 +104,7 @@
           }
         },
         "security": [],
+        "description": "Event source.",
         "summary": "`GET /jmap/eventsource`"
       }
     },
@@ -128,7 +129,7 @@
           }
         },
         "security": [],
-        "description": "the RFC 8620 session resource."
+        "description": "Session .\n\nthe RFC 8620 session resource."
       }
     },
     "/jmap/upload/{account_id}": {
@@ -168,7 +169,7 @@
           }
         },
         "security": [],
-        "description": "blob upload (RFC 9404)."
+        "description": "Upload .\n\nblob upload (RFC 9404)."
       }
     },
     "/jmap/ws": {
@@ -184,7 +185,7 @@
           }
         },
         "security": [],
-        "description": "RFC 8887 JMAP over WebSocket. After the upgrade the\nserver accepts JMAP `Request` frames as text messages and replies with\n`Response` frames; unsolicited `StateChange` pushes are emitted when\nthe changelog advances. Auth is via the `access_token` query param\n(browsers cannot set headers on the upgrade request)."
+        "description": "Jmap ws.\n\nRFC 8887 JMAP over WebSocket. After the upgrade the\nserver accepts JMAP `Request` frames as text messages and replies with\n`Response` frames; unsolicited `StateChange` pushes are emitted when\nthe changelog advances. Auth is via the `access_token` query param\n(browsers cannot set headers on the upgrade request)."
       }
     },
     "/v1/admin/attributes": {
@@ -214,6 +215,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy list attributes.",
         "summary": "`GET /v1/admin/attributes`"
       },
       "put": {
@@ -250,6 +252,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy put attribute.",
         "summary": "`PUT /v1/admin/attributes`"
       },
       "delete": {
@@ -281,6 +284,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy delete attribute.",
         "summary": "`DELETE /v1/admin/attributes`"
       }
     },
@@ -311,6 +315,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy list sets.",
         "summary": "`GET /v1/admin/policy-sets`"
       }
     },
@@ -341,6 +346,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy mode disable.",
         "summary": "`POST /v1/admin/policy-sets/disable`"
       }
     },
@@ -371,6 +377,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy mode enforce.",
         "summary": "`POST /v1/admin/policy-sets/enforce`"
       }
     },
@@ -401,6 +408,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy mode shadow.",
         "summary": "`POST /v1/admin/policy-sets/shadow`"
       }
     },
@@ -442,6 +450,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy get set.",
         "summary": "`GET /v1/admin/policy-sets/{name}`"
       },
       "put": {
@@ -489,6 +498,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy put set.",
         "summary": "`PUT /v1/admin/policy-sets/{name}`"
       },
       "delete": {
@@ -520,6 +530,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy delete set.",
         "summary": "`DELETE /v1/admin/policy-sets/{name}`"
       }
     },
@@ -566,6 +577,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy test set.",
         "summary": "`POST /v1/admin/policy-sets/{name}/test`"
       }
     },
@@ -596,6 +608,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy list relations.",
         "summary": "`GET /v1/admin/relations`"
       },
       "put": {
@@ -632,6 +645,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy put relation.",
         "summary": "`PUT /v1/admin/relations`"
       },
       "delete": {
@@ -663,6 +677,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy delete relation.",
         "summary": "`DELETE /v1/admin/relations`"
       }
     },
@@ -719,6 +734,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy check relation.",
         "summary": "`GET /v1/admin/relations/check`"
       }
     },
@@ -757,7 +773,7 @@
           }
         },
         "security": [],
-        "description": "`GET /v1/admin/ui/{page}` - RFW definition for the requested page."
+        "description": "Get admin ui.\n\n`GET /v1/admin/ui/{page}` - RFW definition for the requested page."
       },
       "post": {
         "tags": [
@@ -815,7 +831,7 @@
             "description": "Unknown page"
           }
         },
-        "description": "data for the admin viewer pages."
+        "description": "Admin data.\n\ndata for the admin viewer pages."
       }
     },
     "/v1/health": {
@@ -830,6 +846,7 @@
           }
         },
         "security": [],
+        "description": "Health .",
         "summary": "`GET /v1/health`"
       }
     },
@@ -853,6 +870,7 @@
           }
         },
         "security": [],
+        "description": "Acl grant.",
         "summary": "`POST /v1/internal/acl/grant`"
       }
     },
@@ -876,6 +894,7 @@
           }
         },
         "security": [],
+        "description": "Acl revoke.",
         "summary": "`POST /v1/internal/acl/revoke`"
       }
     },
@@ -896,6 +915,7 @@
           }
         },
         "security": [],
+        "description": "Acl effective rights.",
         "summary": "`GET /v1/internal/acl/rights`"
       }
     },
@@ -925,7 +945,7 @@
           }
         },
         "security": [],
-        "description": "upload quota gate."
+        "description": "Blob quota.\n\nupload quota gate."
       }
     },
     "/v1/internal/changes": {
@@ -954,7 +974,7 @@
           }
         },
         "security": [],
-        "description": "changelog window (JMAP/IMAP sync)."
+        "description": "Changes since.\n\nchangelog window (JMAP/IMAP sync)."
       }
     },
     "/v1/internal/email/keywords": {
@@ -977,6 +997,7 @@
           }
         },
         "security": [],
+        "description": "Set email keywords.",
         "summary": "`POST /v1/internal/email/keywords`"
       }
     },
@@ -1006,7 +1027,7 @@
           }
         },
         "security": [],
-        "description": "store the raw blob for an APPEND\n(IMAP/POP3 upload path): bytes → Storage, blob-hash returned."
+        "description": "Store raw blob.\n\nstore the raw blob for an APPEND\n(IMAP/POP3 upload path): bytes → Storage, blob-hash returned."
       }
     },
     "/v1/internal/email/{env_id}/{account_id}/{email_id}": {
@@ -1058,6 +1079,7 @@
           }
         },
         "security": [],
+        "description": "Get email.",
         "summary": "`GET /v1/internal/email/{env_id}/{account_id}/{email_id}`"
       }
     },
@@ -1086,6 +1108,7 @@
           }
         },
         "security": [],
+        "description": "Copy emails.",
         "summary": "`POST /v1/internal/emails/copy`"
       }
     },
@@ -1114,6 +1137,7 @@
           }
         },
         "security": [],
+        "description": "Destroy emails.",
         "summary": "`POST /v1/internal/emails/destroy`"
       }
     },
@@ -1143,7 +1167,7 @@
           }
         },
         "security": [],
-        "description": "local delivery filing."
+        "description": "Ingest .\n\nlocal delivery filing."
       }
     },
     "/v1/internal/ingest/append": {
@@ -1171,6 +1195,7 @@
           }
         },
         "security": [],
+        "description": "Ingest append.",
         "summary": "`POST /v1/internal/ingest/append`"
       }
     },
@@ -1191,6 +1216,7 @@
           }
         },
         "security": [],
+        "description": "List mailbox emails.",
         "summary": "`GET /v1/internal/mailbox/emails`"
       }
     },
@@ -1211,6 +1237,7 @@
           }
         },
         "security": [],
+        "description": "List mailboxes.",
         "summary": "`GET /v1/internal/mailboxes`"
       },
       "post": {
@@ -1238,7 +1265,7 @@
           }
         },
         "security": [],
-        "description": "create a mailbox."
+        "description": "Create mailbox.\n\ncreate a mailbox."
       }
     },
     "/v1/internal/resolve": {
@@ -1267,7 +1294,7 @@
           }
         },
         "security": [],
-        "description": "RCPT resolution (sub-addressing, aliases,\ncatch-all, group expansion)."
+        "description": "Resolve address.\n\nRCPT resolution (sub-addressing, aliases,\ncatch-all, group expansion)."
       }
     },
     "/v1/internal/sieve/delete": {
@@ -1291,7 +1318,7 @@
           }
         },
         "security": [],
-        "description": "remove a script row."
+        "description": "Sieve delete.\n\nremove a script row."
       }
     },
     "/v1/internal/sieve/get": {
@@ -1320,7 +1347,7 @@
           }
         },
         "security": [],
-        "description": "one script's source (from Storage)."
+        "description": "Sieve get.\n\none script's source (from Storage)."
       }
     },
     "/v1/internal/sieve/list": {
@@ -1349,7 +1376,7 @@
           }
         },
         "security": [],
-        "description": "the account's scripts + active flag."
+        "description": "Sieve list.\n\nthe account's scripts + active flag."
       }
     },
     "/v1/internal/sieve/put": {
@@ -1373,7 +1400,7 @@
           }
         },
         "security": [],
-        "description": "store a compiled script (blob →\nStorage, row upsert)."
+        "description": "Sieve put.\n\nstore a compiled script (blob →\nStorage, row upsert)."
       }
     },
     "/v1/internal/sieve/rename": {
@@ -1397,7 +1424,7 @@
           }
         },
         "security": [],
-        "description": "rename a script."
+        "description": "Sieve rename.\n\nrename a script."
       }
     },
     "/v1/internal/sieve/setactive": {
@@ -1421,7 +1448,7 @@
           }
         },
         "security": [],
-        "description": "flip the active script (only one\nmay be active; the row flips + the account pointer updates)."
+        "description": "Sieve set active.\n\nflip the active script (only one\nmay be active; the row flips + the account pointer updates)."
       }
     },
     "/v1/internal/submit": {
@@ -1450,7 +1477,7 @@
           }
         },
         "security": [],
-        "description": "enqueue a submission into the Mta queue.\nStore proxies to Mta (it owns the queue); the response is Mta's."
+        "description": "Submit .\n\nenqueue a submission into the Mta queue.\nStore proxies to Mta (it owns the queue); the response is Mta's."
       }
     }
   },

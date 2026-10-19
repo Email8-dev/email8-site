@@ -37,6 +37,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy list attributes.",
         "summary": "`GET /v1/admin/attributes`"
       },
       "put": {
@@ -73,6 +74,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy put attribute.",
         "summary": "`PUT /v1/admin/attributes`"
       },
       "delete": {
@@ -104,6 +106,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy delete attribute.",
         "summary": "`DELETE /v1/admin/attributes`"
       }
     },
@@ -134,6 +137,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy list sets.",
         "summary": "`GET /v1/admin/policy-sets`"
       }
     },
@@ -164,6 +168,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy mode disable.",
         "summary": "`POST /v1/admin/policy-sets/disable`"
       }
     },
@@ -194,6 +199,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy mode enforce.",
         "summary": "`POST /v1/admin/policy-sets/enforce`"
       }
     },
@@ -224,6 +230,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy mode shadow.",
         "summary": "`POST /v1/admin/policy-sets/shadow`"
       }
     },
@@ -265,6 +272,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy get set.",
         "summary": "`GET /v1/admin/policy-sets/{name}`"
       },
       "put": {
@@ -312,6 +320,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy put set.",
         "summary": "`PUT /v1/admin/policy-sets/{name}`"
       },
       "delete": {
@@ -343,6 +352,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy delete set.",
         "summary": "`DELETE /v1/admin/policy-sets/{name}`"
       }
     },
@@ -389,6 +399,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy test set.",
         "summary": "`POST /v1/admin/policy-sets/{name}/test`"
       }
     },
@@ -419,6 +430,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy list relations.",
         "summary": "`GET /v1/admin/relations`"
       },
       "put": {
@@ -455,6 +467,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy put relation.",
         "summary": "`PUT /v1/admin/relations`"
       },
       "delete": {
@@ -486,6 +499,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy delete relation.",
         "summary": "`DELETE /v1/admin/relations`"
       }
     },
@@ -542,6 +556,7 @@
             "sentin8:admin": []
           }
         ],
+        "description": "Policy check relation.",
         "summary": "`GET /v1/admin/relations/check`"
       }
     },
@@ -584,7 +599,7 @@
             "email8:gate:telemetry:read": []
           }
         ],
-        "description": "`GET /v1/admin/ui/gate` - RFW definition of the telemetry page."
+        "description": "Get admin ui.\n\n`GET /v1/admin/ui/gate` - RFW definition of the telemetry page."
       }
     },
     "/v1/admin/{page}": {
@@ -623,7 +638,7 @@
             "email8:gate:telemetry:read": []
           }
         ],
-        "description": "`POST /v1/admin/gate` - page data: counters + listener table split by\nthe sub-endpoint path the RFW widgets post to."
+        "description": "Admin data.\n\n`POST /v1/admin/gate` - page data: counters + listener table split by\nthe sub-endpoint path the RFW widgets post to."
       }
     },
     "/v1/gate/telemetry": {
@@ -644,7 +659,7 @@
           }
         },
         "security": [],
-        "description": "Spec wrapper for the inline `/v1/gate/telemetry` closure."
+        "description": "Gate telemetry spec.\n\nSpec wrapper for the inline `/v1/gate/telemetry` closure."
       }
     },
     "/v1/health": {
@@ -665,7 +680,7 @@
           }
         },
         "security": [],
-        "description": "Spec wrapper for the inline `/v1/health` closure."
+        "description": "Gate health spec.\n\nSpec wrapper for the inline `/v1/health` closure."
       }
     }
   },
