@@ -3,7 +3,7 @@
   "name": "Email8",
   "org": "Email8-dev",
   "domain": "email8.dev",
-  "tagline": "Email on Sentin8 - an SMTP/LMTP transfer engine, a mail & collaboration data core with JMAP, IMAP/POP3/Sieve/CalDAV access, and a TLS gate for the well-known ports.",
+  "tagline": "Secure Post-Quantum-Safe Email Platform That Heals and Scales Itself.",
   "accent": "#3E8FB0",
   "pillarsLead": "Email8 inherits the Sentin8 security model and adds mail's own guarantees - authenticated access on every protocol, DKIM-signed outbound, and TLS-only listeners.",
   "pillars": [
