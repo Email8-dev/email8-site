@@ -1,4 +1,8 @@
 # Email8:Site - email8.dev
+[![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](../LICENSE)
+[![Built with Rust](https://img.shields.io/badge/Built%20with-Rust-orange.svg)](https://www.rust-lang.org/)
+[![Docs](https://img.shields.io/badge/docs/read-3aa757.svg)](https://email8.dev/docs/services/site)
+[![Website](https://img.shields.io/badge/website-email8.dev-1a73e8.svg)](https://email8.dev/docs/products/email8-site)
 
 > The Email8 public website at [email8.dev](https://email8.dev): every
 > product, app, and SDK of the vertical, with its domain invariants
