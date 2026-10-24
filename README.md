@@ -1,4 +1,4 @@
-# README.md: Email8:Site - email8.dev
+# Email8:Site - email8.dev
 
 > The Email8 public website at [email8.dev](https://email8.dev): every
 > product, app, and SDK of the vertical, with its domain invariants
