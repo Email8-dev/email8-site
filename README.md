@@ -64,7 +64,7 @@ the harvester picks up the repo trio automatically.
 Push to `main` → `ci.yml` calls `Sentin8/sentin8-ci site.yml@ci-v1` →
 harvest → build → GitHub Pages. Weekly scheduled rebuild refreshes
 harvested content. Custom domain via `static/CNAME` (operator DNS
-step: WEB-10).
+step:).
 
 ---
 
