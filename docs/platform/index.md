@@ -30,3 +30,18 @@ Every campaign, template, and delivery event flows through the same
 self-healing fleet: Email8 inherits the scale, the latency, and the
 operational independence by construction - zero vertical-side
 infrastructure to operate.
+
+## Computationally sustainable
+
+Future-proof your ESG strategy with Sentin8, the **world's most
+computationally sustainable platform**. By discarding bloated, interpreted
+runtimes in favor of a lightning-fast architecture built entirely on
+compiled Rust and isolated WebAssembly (WASM) edge functions, Sentin8
+processes high-velocity transactions using **up to 75 times less energy
+than traditional VM-based and Python-driven engines**. This allows
+Tier-1 financial institutions to radically shrink their data center vCPU
+allocation, slash server memory overhead, and eliminate compute waste
+from transactional retries. With Sentin8, you aren't just modernizing
+your campaigns; you are actively driving down your Scope 3 emissions and
+turning core IT infrastructure into your strongest asset for achieving
+corporate net-zero targets.
