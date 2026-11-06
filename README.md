@@ -46,6 +46,7 @@ graph TD
 | `/docs/security/` | Vertical invariants + inherited platform pillars |
 | `/docs/developers/` · `/docs/samples/` | Dev story · first calls |
 | `/docs/reference/{unit}/` | Harvested README/DESIGN/BUSINESS per unit |
+| `/privacy` · `/terms` | Vertical legal pages: Privacy Policy and Terms of Service (also every footer legal link target) |
 
 ## 5. Development
 
