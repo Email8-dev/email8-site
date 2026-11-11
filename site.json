@@ -3,7 +3,7 @@
   "name": "Email8",
   "org": "Email8-dev",
   "domain": "email8.dev",
-  "tagline": "Open-Source Post-Quantum Email Platform - Encrypted Mail Delivery That Heals and Scales Itself.",
+  "tagline": "Open-Source Secure Post-Quantum-Safe Email Platform That Heals and Scales Itself.",
   "accent": "#3E8FB0",
   "pillarsLead": "Email8 inherits the Sentin8 security model and adds mail's own guarantees - authenticated access on every protocol, DKIM-signed outbound, and TLS-only listeners.",
   "pillars": [
