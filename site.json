@@ -3,7 +3,7 @@
   "name": "Email8",
   "org": "Email8-dev",
   "domain": "email8.dev",
-  "tagline": "Open-Source Post-Quantum Email Platform (Apache 2.0): encrypted mail delivery in Rust - heals and scales itself.",
+  "tagline": "Open-Source Post-Quantum Email Platform - Encrypted Mail Delivery That Heals and Scales Itself.",
   "accent": "#3E8FB0",
   "pillarsLead": "Email8 inherits the Sentin8 security model and adds mail's own guarantees - authenticated access on every protocol, DKIM-signed outbound, and TLS-only listeners.",
   "pillars": [
@@ -110,5 +110,6 @@
       "href": "https://sentin8.dev/"
     }
   ],
-  "crossrefs": []
+  "crossrefs": [],
+  "heroTagline": "Open-Source Post-Quantum Email Platform - encrypted delivery; heals and scales itself."
 }
