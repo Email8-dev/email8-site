@@ -4,6 +4,9 @@
   "org": "Email8-dev",
   "domain": "email8.dev",
   "tagline": "Open-Source Secure Post-Quantum-Safe Email Platform That Heals and Scales Itself.",
+  "heroEyebrow": "Open-Source Email",
+  "heroTitle": "Email8: Autonomous Quantum-Safe Email",
+  "heroDescription": "A complete mail platform for regulated organizations: SMTP/LMTP delivery with DKIM signing and DMARC/TLS-RPT reporting, one store for mail, contacts, calendars and JMAP, IMAP/POP3/ManageSieve and CalDAV/CardDAV access, and TLS on every mail port. Tenant mailboxes sit on the same identity, storage and event planes as every other Sentin8 product.",
   "accent": "#3E8FB0",
   "pillarsLead": "Email8 inherits the Sentin8 security model and adds mail's own guarantees - authenticated access on every protocol, DKIM-signed outbound, and TLS-only listeners.",
   "pillars": [
@@ -110,6 +113,5 @@
       "href": "https://sentin8.dev/"
     }
   ],
-  "crossrefs": [],
-  "heroTagline": "Open-Source Post-Quantum Email Platform - encrypted delivery; heals and scales itself."
+  "crossrefs": []
 }
